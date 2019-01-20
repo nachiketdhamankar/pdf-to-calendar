@@ -6,3 +6,9 @@ Types of events:
 
 2. Continuous events
   a. Breaks and recess: (Nov 27 to Dec 2)
+
+============================================================================
+[Progress 20 Jan 10:47]
+1. pdf-to-calendar.py contains code to create an event on Google Calendar. Refer Google calendar documentation for further info.
+2. test.py contains code to isolate texts between 2 dates.
+  -Stuck on how to isolate the text for the last date. i.e., the text that is not sandwiched between 2 dates
