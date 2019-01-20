@@ -1,16 +1,19 @@
 from PyPDF2 import PdfFileWriter, PdfFileReader
 import os
-from pathlib import Path
+import os.path as path
 
-PDF_FILES = Path(Path().absolute().parent / 'pdf-files')
+PROJECT_DIR = path.abspath(path.join(__file__, "../.."))
+PDF_FILES = path.join(PROJECT_DIR, "pdf-files")
 
-os.chdir(PDF_FILES)
+def main():
+    pdf_operations()
 
-input1 = PdfFileReader(open(str(Path(PDF_FILES / '1.pdf')), "rb"))
+def pdf_operations():
+    input_pdf = PdfFileReader(open(path.join(PDF_FILES, "1.pdf"), "rb"))
+    print("There are %d" % input_pdf.getNumPages())
+    input_page = input_pdf.getPage(0)
+    print(input_page.extractText().encode('utf-8'))
+    
 
-print("There are %d" % input1.getNumPages())
-page = input1.getPage(0)
-# print(page.extractText())
-test = input1.getFields()
-test2 = input1.outlines
-print(test2)
+if __name__ == '__main__':
+    main()
