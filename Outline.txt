@@ -1,0 +1,8 @@
+Types of events:
+1. Single day events
+  a. Single event on that day (Sep 4)
+  b. Multiple events on that day (Sep 17)
+  c. Holidays (Oct 14)
+
+2. Continuous events
+  a. Breaks and recess: (Nov 27 to Dec 2)
