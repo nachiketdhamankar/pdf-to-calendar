@@ -2,7 +2,14 @@
 import datefinder
 import datetime
 import re
-
+"""
+This is test script.
+# TODO Isolate the text and their respective dates
+Ideas:
+    1. Find all the dates and the information between 2 successive dates is the description for
+    for the 1st date
+    2. Split on 'Ł' as it is the character that's seperating the descriptions and dates
+"""
 def find_text_between(date1, date2, reverse):
     #print("Recd: ",date1, date2)
     if reverse:
@@ -23,6 +30,7 @@ text = text.decode('utf-8')
 dates_list = []
 
 matches = datefinder.find_dates(text)
+
 for date in matches:
     dates_list.append(date.strftime("%b") + " " + str(int(date.strftime("%d"))) + " " + date.strftime("%Y") + " " + date.strftime("%a"))
     #print(date.strftime("%b") + " " + str(int(date.strftime("%d"))) + " " + date.strftime("%Y"))
