@@ -1,6 +1,6 @@
 
 """
-Read the outline.txt asshole. It has important information like where exactly you were stuck.
+Read the outline.txt, O Greate One! It has important information like where exactly you were stuck.
 """
 from PyPDF2 import PdfFileWriter, PdfFileReader
 import os
