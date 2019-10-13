@@ -1,0 +1,14 @@
+Types of events:
+1. Single day events
+  a. Single event on that day (Sep 4)
+  b. Multiple events on that day (Sep 17)
+  c. Holidays (Oct 14)
+
+2. Continuous events
+  a. Breaks and recess: (Nov 27 to Dec 2)
+
+============================================================================
+[Progress 20 Jan 10:47]
+1. pdf-to-calendar.py contains code to create an event on Google Calendar. Refer Google calendar documentation for further info.
+2. test.py contains code to isolate texts between 2 dates.
+  -Stuck on how to isolate the text for the last date. i.e., the text that is not sandwiched between 2 dates
